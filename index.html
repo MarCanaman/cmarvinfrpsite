@@ -1,0 +1,386 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSMCODEPH</title>
+    <link rel="icon" href="#" type="../images/logo.ico">
+</head>
+<body>
+    
+
+<nav class="navbar navbar-expand-lg border-bottom bg-color">
+    <div class="container-fluid">
+        <a class="navbar-brand  text-white" href="#">
+            <img src="images/logo.ico" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            𝐆𝐒𝐌 𝐂𝐎𝐃𝐄𝐏𝐇 𝐛𝐲 𝐂𝐦𝐚𝐫𝐯𝐢𝐧
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                    <!-- <a class="nav-link" href="account.php"><i class="fa-solid fa-user"></i> Account </a> -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .login-button-cotainer {
+        background-color: rgb(145, 122, 122);
+        display: flex;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        color: #000000;
+        margin-left: 1vh;
+    }
+
+    .navbar-nav .nav-link:focus {
+        color: #ffffff;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #ffffff;
+    }
+
+    .navbar-toggler {
+        color: white;
+    }
+
+    .bg-color {
+        display: flex;
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(to right, #0072ff, #6c00ff, #ff7300);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap; /* Allow wrapping in smaller screens */
+    }
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get the current URL path
+        const currentPath = window.location.pathname;
+
+        // Select all nav-link elements
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            // Check if the link href matches the current URL path
+            if (link.getAttribute('href') === currentPath) {
+                // Add active class to the matching link
+                link.classList.add('active');
+                link.setAttribute('aria-current', 'page');
+            } else {
+                link.classList.remove('active');
+                link.removeAttribute('aria-current');
+            }
+        });
+    });
+</script><link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/all.min_1.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<link href="css/bootstrap.min_1.css" rel="stylesheet">
+
+    <div class="container-margin-top"></div>
+    <div class="container-sm box-shadow">
+        <h5>Downloads </h5>
+        <div class="container-margin-bottom"></div>
+        <div class="btn-group btn-margin">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-brands fa-usb"></i> Usb Sharing Tools
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://github.com/MarCanaman/uploadfiles/raw/refs/heads/main/usbredirector-technician-setup.rar" target="_blank">Usb Redirector 1.9.7-Setup</a></li>
+                <li><a class="dropdown-item" href="https://github.com/MarCanaman/uploadfiles/raw/refs/heads/main/Customer.rar" target="_blank">Usb Redirector 1.9.7-Client</a></li>
+                <li><a class="dropdown-item" href="https://www.virtualhere.com/sites/default/files/usbserver/vhusbdwin64.exe" target="_blank">VirtualHere-Server</a></li>
+                <li><a class="dropdown-item" href="https://www.virtualhere.com/sites/default/files/usbclient/vhui64.exe" target="_blank">VirtualHere-Client</a></li>
+                <li><a class="dropdown-item" href="https://github.com/MarCanaman/uploadfiles/raw/refs/heads/main/usbredirector_client_setup64.rar" target="_blank">Usb Redirector 6.1-Client</a></li>
+                <li><a class="dropdown-item" href="https://github.com/MarCanaman/uploadfiles/raw/refs/heads/main/usb-over-network-client-64bit.msi" target="_blank">Fabulatech 6.1-Client</a></li>
+                <li><a class="dropdown-item" href="https://github.com/MarCanaman/uploadfiles/raw/refs/heads/main/Radmin_VPN_1.4.4642.1.rar" target="_blank">RADMIN Vpn</a></li>
+            </ul>
+        </div>
+
+        <div class="btn-group btn-margin">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-cloud"></i> iCloud Bypass Tools
+            </button>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://www.mediafire.com/file/guozo1ze14oiqp7/MagicCFG_v1.2.1.zip/file" target="_blank">Magic CFG</a></li>
+                <li><a class="dropdown-item" href="https://www.mediafire.com/file/ahiaylkbdyva7bw/WinRa1n1.1.exe/file" target="_blank">Winra1n 1.0</a></li>
+                <li><a class="dropdown-item" href="https://www.mediafire.com/file/b2ieyggiw9in336/WinRa1n2.1.exe/file" target="_blank">Winra1n 2.1</a></li>
+                <li><a class="dropdown-item" href="https://github.com/pbatard/libwdi/releases/download/v1.5.0/zadig-2.8.exe" target="_blank">Zadig</a></li>
+                <li><a class="dropdown-item" href="https://kaidogsm.blog/downloads/GasterPwnder.zip" target="_blank">Gaster Pwnder</a></li>
+                <li><a class="dropdown-item" href="https://mega.nz/file/HTZGABJS#YXl1XFAKr7OuJhiB2vXoE_IzmFQHV3GSn_lwqREJCQ0" target="_blank">iPwnder By Gautam</a></li>
+                <li><a class="dropdown-item" href="https://kaidogsm.blog/downloads/iPhBypass_mac.zip" target="_blank">iPh Pwnder Mac</a></li>
+                <li><a class="dropdown-item" href="https://github.com/MarCanaman/uploadfiles/raw/refs/heads/main/Hackt1vatorSetup.msi" target="_blank">hackt1vator</a></li>
+                <li><a class="dropdown-item" href="https://objects.githubusercontent.com/github-production-release-asset-2e65be/255782188/85941900-9270-11eb-9218-892ce7e0c89a?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230816%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230816T111436Z&X-Amz-Expires=300&X-Amz-Signature=75f262757c5cfe173046037f2108e59f8a555d83c51aee28e2c362a893677169&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=255782188&response-content-disposition=attachment%3B%20filename%3DiPwnder32_3.2_3C152_RELEASE.zip&response-content-type=application%2Foctet-stream" target="_blank">A6 Pwnder</a></li>
+            </ul>
+        </div>
+
+        <div class="btn-group btn-margin">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-brands fa-android"></i> Android Drivers
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item btn-primary" href="https://drive.google.com/uc?export=download&id=1woR6UIjUjTXD__xMdwRztP9HdL9tVxb0" target="_blank">Mediatek/Qualcomm</a></li>
+                <li><a class="dropdown-item" href="https://androiddatahost.com/wp-content/uploads/SPD_Driver_R4.20.4201.zip" target="_blank">Spreadtrum</a></li>
+                <li><a class="dropdown-item" href="https://www.mediafire.com/file/8bsxhaic4vecl6o/Huawei+USB+COM+1.0+Driver.zip/file" target="_blank">Kirin Huawei USB COM</a></li>
+                <li><a class="dropdown-item" href="https://github.com/daynix/UsbDk/releases/download/v1.00-22/UsbDk_1.0.22_x64.msi" target="_blank">LibUSBK</a></li>
+                <li><a class="dropdown-item" href="https://cdn.lgusbdriver.com/wp-content/uploads/LG_Mobile_Driver_v4.0.3.0.zip" target="_blank">LG</a></li>
+                <li><a class="dropdown-item" href="https://cdn.motorolausbdriver.com/wp-content/uploads/Motorola_Mobile_Drivers_v6.4.0.zip" target="_blank">Motorola</a></li>
+                <li><a class="dropdown-item" href="https://www.mediafire.com/file/nn7tgjccc1tbfuk/libusb-win32.exe/file" target="_blank">Lib USB Filter</a></li>
+                <li><a class="dropdown-item" href="https://chimeratool.com/downloads/latest" target="_blank">Chimera</a></li>
+                <li><a class="dropdown-item" href="https://griffin-unlocker.com/SoftwareDriverOffline_By_GriffinUnlocker.rar" target="_blank">Griffin AiO</a></li>
+                <li><a class="dropdown-item" href="https://mega.nz/file/M2dBwKTI#4j-SOPmPK2hqO1zAPkhnpiEwkLiood8jwcYMfqvGvmw" target="_blank">ADB Drivers</a></li>
+            </ul>
+        </div>
+
+        <div class="btn-group btn-margin">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-brands fa-apple"></i> Apple Drivers
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item btn-primary" href="https://www.mediafire.com/file/2kknc7kxdr4nmm0/Apple_Drivers.rar/file" target="_blank">Apple Driver Manual</a></li>
+                <li><a class="dropdown-item" href="https://secure-appldnld.apple.com/itunes12/001-80053-20210422-E8A3B28C-A3B2-11EB-BE07-CE1B67FC6302/iTunes64Setup.exe" target="_blank">iTunes 64 Bit</a></li>
+                <li><a class="dropdown-item" href="https://secure-appldnld.apple.com/itunes12/001-80042-20210422-E8A351F2-A3B2-11EB-9A8F-CF1B67FC6302/iTunesSetup.exe" target="_blank">iTunes 32 Bit</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="mt-3"></div>
+    <div class="container-sm box-shadow">
+        <h5>PH Android Virus & ADS Remover Tool </h5>
+        <div class="container-margin-bottom"></div>
+        <a href="https://mega.nz/file/V6NkjAJQ#P6s_pXtur6xRB5zrVzXThKW0I1Q6DjqLXXNqQbsYKnk" target="_blank" class="btn btn-outline-primary btn-margin">3Months Subcription 300PHP</a>
+        <a href="https://mega.nz/file/V6NkjAJQ#P6s_pXtur6xRB5zrVzXThKW0I1Q6DjqLXXNqQbsYKnk" target="_blank" class="btn btn-outline-primary btn-margin">6Months Subcription 600PHP</a>
+        <a href="https://mega.nz/file/V6NkjAJQ#P6s_pXtur6xRB5zrVzXThKW0I1Q6DjqLXXNqQbsYKnk" target="_blank" class="btn btn-outline-primary btn-margin">1Year Subcription 800PHP</a>
+        <a href="https://mega.nz/file/M2dBwKTI#4j-SOPmPK2hqO1zAPkhnpiEwkLiood8jwcYMfqvGvmw" target="_blank" class="btn btn-outline-primary btn-margin">ADB Installer</a>
+         <a href="https://builds.dotnet.microsoft.com/dotnet/Sdk/6.0.428/dotnet-sdk-6.0.428-win-x64.exe" target="_blank" class="btn btn-outline-primary btn-margin">Microsoft Dot Net 6.0</a>
+        <a href="https://www.facebook.com/gsmcodeph/?viewas=100000686899395" target="_blank" class="btn btn-outline-primary btn-margin">Send your HWID Key to Cmarvin</a>
+    </div>
+    </div>
+    
+    <div class="mt-3"></div>
+    <div class="container-sm box-shadow">
+        <h5>Software Dongles & Box </h5>
+        <div class="container-margin-bottom"></div>
+        <a href="https://iremovalpro.com/" target="_blank" class="btn btn-outline-primary btn-margin">iRemoval Pro</a>
+        <a href="https://iremove.tools/bypass-icloud-activation-lock-screen-software" target="_blank" class="btn btn-outline-primary btn-margin">iRemove Tool</a>
+        <a href="https://mega.nz/folder/R8By0ZiK#4YM_HLtYjq5d3lK-ot1pLg" target="_blank" class="btn btn-outline-primary btn-margin">LPro Max</a>
+        <a href="https://sigmakey.com/nfs/content/5802/file/sigmaplus-software-setup-v1.00.05.00.exe" target="_blank" class="btn btn-outline-primary btn-margin">Sigma Plus</a>
+        <a href="https://www.mediafire.com/file/iq6aopyjc2nx2v4/Sigma+-+Radmin+-+Usb+Over+Network+AIO.zip/file" target="_blank" class="btn btn-outline-primary btn-margin">Sigma Plus - Radmin - Usb</a>
+        <a href="https://easy-firmware.com/index.php?a=downloads&b=file&c=download&id=250229" target="_blank" class="btn btn-outline-primary btn-margin">EFT Pro</a>
+        <a href="https://www.mediafire.com/file/t5w8hp1yesb55e5/UMTv2_UMTPro_QcFire_v10.3_Setup_(by_gsmofficial.com).zip/file" target="_blank" class="btn btn-outline-primary btn-margin">UMT Qc Fire</a>
+        <a href="https://drive.usercontent.google.com/download?id=1XwtzcHTcaSaR0SNpwpMLMTnYRFW8xgfa&export=download&authuser=0" target="_blank" class="btn btn-outline-primary btn-margin">Umt Mtk</a>
+        <a href="https://www.mediafire.com/file/z0kpulo1gepmr40/Huawei_Fastboot_Reader.zip/file" class="btn btn-outline-primary btn-margin">Honor FRP Tool</a>
+        <a href="https://drive.usercontent.google.com/download?id=1vqPvlEv3pBc-T0vvmK1lz4nWUJ4lhPgt&export=download&authuser=0" class="btn btn-outline-primary btn-margin">FRT Tool 1.6.0</a>
+        <a href="https://samfw.com/Odin/Samfw.com_Odin3_v3.14.4.zip" class="btn btn-outline-primary btn-margin">Odin 3.14.4</a>
+        <a href="https://mega.nz/file/Y29GyJyT#J9wvriCdguLuazjkfrv57GivHnyXvTuuKmvWjpA8rjY" class="btn btn-outline-primary btn-margin">Odin3 Patched</a>
+        <a href="https://samfw.com/SamFwToolSetup_v4.9.zip" class="btn btn-outline-primary btn-margin">SamFw Tool 4.9</a>
+    </div>
+
+    <div class="mt-3"></div>
+    <div class="container-sm box-shadow">
+        <h5>Utilities </h5>
+        <div class="container-margin-bottom"></div>
+        <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank" class="btn btn-outline-primary btn-margin">Visual C++</a>
+        <a href="https://www.mediafire.com/file/kv6hegkgvx297qn/710_b042_multilanguage.exe/file?fbclid=IwAR2N7AIolZke1Pv6k08kaq0NR_mNEJKgKoD7AlfjAThhc3oYwU4MEmIBGHw" target="_blank" class="btn btn-outline-primary btn-margin">Sigma Plus 0xc015002 Fix</a>
+        <a href="https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-624.exe" target="_blank" class="btn btn-outline-primary btn-margin">Winrar</a>
+        <a href="https://www.7-zip.org/a/7z2409-x64.exe" target="_blank" class="btn btn-outline-primary btn-margin">7zip</a>
+        <a href="https://github.com/MarCanaman/uploadfiles/raw/refs/heads/main/IDM%206.42%20Build%2022.7z" target="_blank" class="btn btn-outline-primary btn-margin">IDM Crack</a>
+        <a href="https://github.com/MarCanaman/uploadfiles/raw/refs/heads/main/IDMDownloadFixer.exe" target="_blank" class="btn btn-outline-primary btn-margin">IDM Premium 2025</a>
+        <a href="https://drive.google.com/uc?export=download&id=1rWe3pAEIDhdJRhKH73VvvP9Fdr6iXScE" target="_blank" class="btn btn-outline-primary btn-margin">Permanent Remove Windows Defender</a>
+        <a href="https://github.com/MarCanaman/uploadfiles/raw/refs/heads/main/Microsoft-Activation-Scripts-master.zip" target="_blank" class="btn btn-outline-primary btn-margin">Windows and Office Activator</a>
+        <a href="https://www.ultraviewer.net/en/UltraViewer_setup_6.6_en.exe" target="_blank" class="btn btn-outline-primary btn-margin">UltraViewer</a>
+        <a href="https://drive.google.com/uc?export=download&id=1PVf3Fp8peR0S4CdwFGuQBGtZaUl9cVEM" target="_blank" class="btn btn-outline-primary btn-margin">TeamViewer</a>
+        <a href="https://anydesk.com/en/downloads/thank-you?dv=win_exe" target="_blank" class="btn btn-outline-primary btn-margin">AnyDesk</a>
+        <a href="https://down.aweray.com/awesun/windows/Aweray_Remote_2.0.0.45399_x64.exe" target="_blank" class="btn btn-outline-primary btn-margin">Aweray</a>
+        <a href="https://dl.deskin.io/windows/DeskIn_Setup_v3.3.1.0_x64.exe?_gl=1*1am0yqk*_gcl_au*Nzg3ODcyNzQuMTc1Mjc0MjA5NQ..*_ga*MTgxMDY3NzY3My4xNzUyNzQyMTAx*_ga_PWK5F4HRSP*czE3NTQ0NDY2MjMkbzUkZzEkdDE3NTQ0NDY2MjkkajU0JGwwJGg2OTY5MTk3ODA." target="_blank" class="btn btn-outline-primary btn-margin">Deskin</a>
+        <a href="https://3utools.org/files/downloads/3uTools_Setup_x64.exe" target="_blank" class="btn btn-outline-primary btn-margin">3utools</a>
+        <a href="https://mega.nz/file/tudVkb6b#QMilc5Zw6FIT_ByG9qWNsVrgmyvOFgL6B4o2CKJ_xrE" target="_blank" class="btn btn-outline-primary btn-margin">Scrpcy</a>
+    </div>
+
+    <div class="mt-3"></div>
+    <div class="container-sm box-shadow">
+        <h5>Realme </h5>
+        <div class="container-margin-bottom"></div>
+        <a href="https://download.gaprologin.com/DownloadTool_Rcsm_V1.2.23.zip" target="_blank" class="btn btn-outline-primary btn-margin">Mtk</a>
+        <a href="https://download.gaprologin.com/MsmDownloadTool_V2.0.71_rcsm.rar" target="_blank" class="btn btn-outline-primary btn-margin">Qualcomm</a>
+        <a href="https://drive.google.com/file/d/1DlXuj7liSZuWN68NU610_-lXwxmD-6eP/view?usp=sharing" class="btn btn-outline-primary btn-margin">Oplus Realme</a>
+        <a href="https://www.meowloader.com/download/download.php?token=c468c821e30b61b40de5606f068c0979" class="btn btn-outline-primary btn-margin">Meow Loader 3.1</a>
+    </div>
+
+    <div class="mt-3"></div>
+    <div class="container-sm box-shadow">
+        <h5>Premium Crack </h5>
+        <div class="container-margin-bottom"></div>
+        <a href="https://www.mediafire.com/file/rriqkqy89sol8dp/Install_VGV5.1.rar/file" target="_blank" class="btn btn-outline-primary btn-margin">VG Tool 5.1</a>
+        <a href="https://www.mediafire.com/file/dzqur0zaaai3e8f/MCT_DH_STATIC_TOOL_V4.2401180130.00_MAIN_SN.exe.zip/file" target="_blank" class="btn btn-outline-primary btn-margin">MCH Android Tool</a>
+        <a href="https://gsmxteam.com/cxcam/index.php" target="_blank" class="btn btn-outline-primary btn-margin">GSM X TEAM</a>
+    </div>
+
+    <div class="mt-3"></div>
+    <div class="container-sm box-shadow">
+        <h5>IMEI Checker </h5>
+        <div class="container-margin-bottom"></div>
+        <a href="https://imeicheck.com/" target="_blank" class="btn btn-outline-primary btn-margin">imeicheck</a>
+        <a href="https://sickw.com/" target="_blank" class="btn btn-outline-primary btn-margin">sickw</a>
+        <a href="https://samfw.com/imei" target="_blank" class="btn btn-outline-primary btn-margin">samfw</a>
+        <a href="https://i.mi.com/find/device/activationlock#/status" target="_blank" class="btn btn-outline-primary btn-margin">mi account</a>
+    </div>
+
+    <div class="mt-3"></div>
+    <div class="container-sm box-shadow">
+        <h5>Sony Experia Pin/Password/Pattern Removal </h5>
+        <div class="container-margin-bottom"></div>
+        <a href="https://mega.nz/file/d20ixCCR#pjNFXX72vhvgByac-ysCPHbGY-avuOVjJNv5DjH-83I" target="_blank" class="btn btn-outline-primary btn-margin">Flashtool</a>
+        <a href="https://mega.nz/file/p2cHTQCL" target="_blank" class="btn btn-outline-primary btn-margin">.FTF files</a>
+        <a href="https://www.youtube.com/watch?v=b_ShxBmonEE" target="_blank" class="btn btn-outline-primary btn-margin">Video Tutorial</a>
+    </div>
+
+    <div class="mt-3"></div>
+    <div class="container-sm box-shadow">
+        <h5>How to Check Exact Model </h5>
+        <div class="container-margin-bottom"></div>
+        <a href="https://www.youtube.com/watch?v=7bvhKAJ0hp4" target="_blank" class="btn btn-outline-primary btn-margin">All Vivo</a>
+ 
+    </div>
+
+    <div class="mt-3"></div>
+    <div class="container-sm box-shadow">
+        <h5>Jailbreak </h5>
+        <div class="container-margin-bottom"></div>
+        <div class="btn-group btn-margin">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-brands fa-windows"></i> Windows Bootable
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item btn-primary" href="https://drive.google.com/file/d/13tcsdh_fnIVQr_Ty8wf0_D1hWFo1t5dd/view?usp=sharing" target="_blank">Checkra1n 12.2</a></li>
+                <li><a class="dropdown-item" href="https://drive.google.com/file/d/1wYHjEqYNV0MsdDW1pTJjKPrIz5ZVogmS/view?usp=sharing" target="_blank">Checkra1n 12.3</a></li>
+                <li><a class="dropdown-item" href="https://drive.google.com/file/d/16O11ekdCGVqjMHvt2-PJ1YWzeGTHfUXj/view?usp=sharing" target="_blank">Checkra1n 12.4</a></li>
+                <li><a class="dropdown-item" href="https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5.exe" target="_blank">Rufus</a></li>
+            </ul>
+        </div>
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-brands fa-windows"></i> Windows [no need usb]
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item btn-primary" href="https://mega.nz/file/Bz1VhK6L#Pa2x96WnU5BQgHHTo1qYdnjI6AdaBmnO_cqcfJWWg9o" target="_blank">Winra1n 2.1</a></li>
+        </ul>
+        <div class="btn-group btn-margin">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-desktop"></i> Mac
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item btn-primary" href="https://drive.google.com/file/d/1UY-UABu8XFrlL7J8jsHukbuC1vZrBDnd/view?usp=sharing" target="_blank">Checkra1n 11</a></li>
+                <li><a class="dropdown-item" href="https://drive.google.com/file/d/1yynIRcll5mpZG0KxryKpdPTCqVBJNMxw/view?usp=sharing" target="_blank">Checkra1n 12.2 Patched</a></li>
+                <li><a class="dropdown-item" href="https://drive.google.com/file/d/1V2fxMi7KxdhbaHf7ggMjdTQsxocHXkaS/view?usp=sharing" target="_blank">Checkra1n 12.2</a></li>
+                <li><a class="dropdown-item" href="https://drive.google.com/file/d/1wYHjEqYNV0MsdDW1pTJjKPrIz5ZVogmS/view?usp=sharing" target="_blank">Checkra1n 12.3</a></li>
+                <li><a class="dropdown-item" href="https://drive.google.com/file/d/1QNLcHWd1790vCU4UYCgEKuEuw_KtPbQH/view?usp=sharing" target="_blank">Checkra1n 12.4</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="container-sm box-shadow">
+        <h5>Windows Operating OS </h5>
+        <div class="container-margin-bottom"></div>
+        <div class="btn-group btn-margin">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-brands fa-windows"></i> Windows Bootable ISO
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item btn-primary" href="https://mega.nz/file/h2kRELhb" target="_blank">spectre WIN10 PRO U21 AIO X64 wpe</a></li>
+                <li><a class="dropdown-item" href="https://mega.nz/file/JuMh0SCQ" target="_blank">spectre WIN11 PRO U10 AIO X64 wpe</a></li>
+            </ul>
+        </div>
+
+        </div>
+    <div class="container-sm box-shadow">
+        <h5>FRP Bypass Tricks 2025 </h5>
+        <div class="container-margin-bottom"></div>
+        <div class="btn-group btn-margin">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-brands fa-android"></i> Click Here
+            </button>
+            <ul class="dropdown-menu">
+                 <li><a class="dropdown-item btn-primary" href="https://www.cmarvin-frp.shop/" target="_blank">E-FRP - GSM CODEPH</a></li>
+             </ul>
+        </div> 
+
+
+    
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+               <p class="text-dark text-md-left">Copyright © 2025 GSMCODEPH BY <a href="https://www.facebook.com/profile.php?id=61572880497473">Cmarvin</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .footer {
+        padding: 20px 0;
+        margin-top: auto;
+    }
+
+    p{
+        color: white;
+    }
+
+    .footer a:hover {
+        text-decoration: none;
+    }
+</style>
+
+
+<style>
+    .container-margin-top {
+        margin-top: 5vh;
+    }
+
+    .container-margin-bottom {
+        margin-bottom: 2vh;
+    }
+
+    .box-shadow {
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        padding: 20px;
+    }
+
+    .btn-margin {
+        margin-bottom: 1vh;
+        margin-left: 1vh;
+    }
+</style>
+
+</body></html>
